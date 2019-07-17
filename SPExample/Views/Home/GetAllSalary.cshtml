@@ -1,0 +1,13 @@
+﻿@model IEnumerable<EmployeeSalary>
+
+<div class="card-deck">
+    @foreach (var item in Model)
+    {
+        <div class="card bg-info">
+            <div class="border text-center">
+                <h3>Name: @item.EmployeeName</h3>
+                <h3>Salary: @item.Salary</h3>
+            </div>
+        </div>
+    }
+</div>
